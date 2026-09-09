@@ -35,7 +35,7 @@
   "url": "https://munderdiffl.in/",
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "macOS, Windows, Linux",
-  "softwareVersion": "0.4.6",
+  "softwareVersion": "0.5.2",
   "inLanguage": ["en", "zh-Hans", "ar"],
   "downloadUrl": "https://github.com/chaitanyagiri/munder-difflin/releases/latest",
   "softwareHelp": "https://github.com/chaitanyagiri/munder-difflin#readme",
@@ -603,7 +603,7 @@
     display: block; border-top: 1px solid var(--border); margin-top: 12px; padding-top: 10px;
     font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent);
   }
-  /* ------- languages (0.4.6) ------- */
+  /* ------- languages ------- */
   .langs { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin-top: 40px; text-align: left; }
   .lang { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 20px; }
   .lang-name { display: block; font-size: 1.35rem; font-weight: 600; color: var(--ink); line-height: 1.35; }
@@ -1583,7 +1583,7 @@
 <!-- ══════════════ LANGUAGES ══════════════ -->
 <section id="languages">
   <div class="wrap center">
-    <span class="kicker">NEW IN 0.4.6</span>
+    <span class="kicker">LANGUAGES</span>
     <h2>Not just in English.</h2>
     <p class="lead" style="margin:18px auto 0">
       The whole interface is translated, not only the menus. You pick the language in Settings and the
@@ -1804,19 +1804,25 @@
         </div>
       </div>
     </div>
-    <!-- The name reaches the wall through the Razorpay Payment Page's
-         "Name (as you want it engraved)" field — no server. -->
+    <!-- The "Claim your plaque" button was a direct link to the Razorpay
+         checkout and it was live on this page until 10 Sep 2026. It is off for a
+         PRODUCT reason, not an arithmetic one: the founder ruled the wall is our
+         thank you page (9 Sep 2026), and a thank you page does not have a
+         checkout on it. With nothing to buy, the copy went past tense too, since
+         a price and terms with no button is an advert for something that does
+         not exist. Do not retype the payment URL to restore this. -->
     <div class="support-strip rv" id="support">
       <div>
         <span class="ss-label">FOR THE PROJECT <small>keep it free for everyone</small></span>
-        <h3>Founding Supporter: your name on the Wall</h3>
-        <p>$20, one time. A permanent brass plaque on the
-        <a href="/wall.html">Founders' Wall</a>. The first 100 get 50% off PRO plus a
-        free month of PRO. Munder Difflin stays free for everyone.</p>
+        <h3>The Founding Supporters put Munder Difflin here</h3>
+        <p>They paid for a brass plaque on the
+        <a href="/wall.html">Founders' Wall</a> while the app was still finding its
+        shape. Backing an early version came with a free month of PRO and 50% off
+        an annual plan. Munder Difflin stays free for everyone, and that is what
+        they paid for.</p>
       </div>
       <div class="ss-cta">
-        <a class="btn primary" data-support="wall" href="https://rzp.io/rzp/munder-difflin" target="_blank" rel="noopener">Claim your plaque</a>
-        <a class="btn ghost" href="/wall.html">See the Wall →</a>
+        <a class="btn primary" data-support="wall-link" href="/wall.html">See the Founding Supporters</a>
       </div>
     </div>
   </div>
@@ -2981,9 +2987,8 @@
   // first; "download without paying" keeps the download genuinely ungated.
   (function () {
     var REPO = 'chaitanyagiri/munder-difflin';
-    var REL = '0.4.6'; // fallback version; live links are resolved from the GitHub API below
+    var REL = '0.5.2'; // fallback version; live links are resolved from the GitHub API below
     var BASE = 'https://github.com/' + REPO + '/releases/latest/download/';
-    var PAY_URL = 'https://rzp.io/rzp/munder-difflin'; // Razorpay Payment Page — Munder Difflin: Founders' Wall
     var PLATFORMS = [
       { key: 'mac',   icon: '\ud83c\udf4e', os: 'macOS',   sub: 'Universal \u00b7 Apple Silicon + Intel', match: 'mac-universal.dmg',     file: 'Munder-Difflin-' + REL + '-mac-universal.dmg' },
       { key: 'win',   icon: '\ud83e\ude9f', os: 'Windows', sub: '64-bit installer (.exe)',           match: 'win-x64-setup.exe',     file: 'Munder-Difflin-' + REL + '-win-x64-setup.exe' },
@@ -3064,9 +3069,13 @@
     document.getElementById('smSkipToFree').addEventListener('click', function () { step('free'); });
 
     function goPay() {
+      // The plaque checkout is off: the wall is our thank you page (founder,
+      // 9 Sep 2026) and a thank you page does not have a checkout on it. This
+      // opens the wall to be read instead. The modal's ask/name/pay steps are
+      // left standing to be removed properly as their own job; nothing here
+      // reaches a payment page any more.
       ph('support_clicked', { tier: 'wall', surface: 'download_modal' });
-      window.open(PAY_URL, '_blank', 'noopener');
-      step('pay');
+      window.open('/wall.html', '_blank', 'noopener');
     }
     document.getElementById('smPay').addEventListener('click', function () {
       var v = nameInput.value.trim();
