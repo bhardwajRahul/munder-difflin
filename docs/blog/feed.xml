@@ -8,6 +8,30 @@
   <id>https://munderdiffl.in/blog/</id>
   <author><name>Chaitanya Giri</name><uri>https://munderdiffl.in</uri></author>
   <entry>
+    <title>Codex CLI vs Claude Code</title>
+    <link href="https://munderdiffl.in/blog/codex-cli-vs-claude-code/" />
+    <id>https://munderdiffl.in/blog/codex-cli-vs-claude-code/</id>
+    <published>2026-09-10T00:00:00.000Z</published>
+    <updated>2026-09-10T00:00:00.000Z</updated><category term="Comparisons" />
+    <summary>Codex CLI and Claude Code compared firsthand: sandbox and approval flags, AGENTS.md vs CLAUDE.md, real pricing, and where each terminal agent wins.</summary>
+  </entry>
+  <entry>
+    <title>How Much Does Claude Code Cost?</title>
+    <link href="https://munderdiffl.in/blog/how-much-does-claude-code-cost/" />
+    <id>https://munderdiffl.in/blog/how-much-does-claude-code-cost/</id>
+    <published>2026-09-10T00:00:00.000Z</published>
+    <updated>2026-09-10T00:00:00.000Z</updated><category term="Concepts" />
+    <summary>What Claude Code actually costs: free plan access, Claude Pro and Max pricing, per token API rates, and what running several agents does to the bill.</summary>
+  </entry>
+  <entry>
+    <title>How to Add an MCP Server to Claude Code</title>
+    <link href="https://munderdiffl.in/blog/how-to-add-an-mcp-server-to-claude-code/" />
+    <id>https://munderdiffl.in/blog/how-to-add-an-mcp-server-to-claude-code/</id>
+    <published>2026-09-10T00:00:00.000Z</published>
+    <updated>2026-09-10T00:00:00.000Z</updated><category term="Guides" />
+    <summary>The claude mcp add command, its scope flag, editing .mcp.json by hand, and how Munder Difflin&#39;s Capabilities screen grants an MCP server to one agent at a time.</summary>
+  </entry>
+  <entry>
     <title>Munder Difflin 0.5.2: Pro, the Stapler and Everything Since 0.4.6</title>
     <link href="https://munderdiffl.in/blog/launching-munder-difflin-v0-5-2/" />
     <id>https://munderdiffl.in/blog/launching-munder-difflin-v0-5-2/</id>
@@ -462,29 +486,5 @@
     <published>2026-06-05T00:00:00.000Z</published>
     <updated>2026-09-10T00:00:00.000Z</updated><category term="Guides" />
     <summary>A plain language guide to Munder Difflin 0.5.2. What a coding agent is, which AI engine to pick based on what you already pay for, the one terminal command you&#39;ll ever run, and how to install and set it up on macOS, Windows or Linux.</summary>
-  </entry>
-  <entry>
-    <title>MCP Tool Poisoning: How to Secure the Model Context Protocol</title>
-    <link href="https://munderdiffl.in/blog/mcp-security-tool-poisoning/" />
-    <id>https://munderdiffl.in/blog/mcp-security-tool-poisoning/</id>
-    <published>2026-06-05T00:00:00.000Z</published>
-    <updated>2026-06-05T00:00:00.000Z</updated><category term="Guides" />
-    <summary>How the Model Context Protocol gets attacked — tool poisoning, rug pulls, command injection — and the layered defenses that secure your MCP tools.</summary>
-  </entry>
-  <entry>
-    <title>Multi-Agent Orchestration Patterns: Which Topology, and When</title>
-    <link href="https://munderdiffl.in/blog/multi-agent-orchestration-patterns/" />
-    <id>https://munderdiffl.in/blog/multi-agent-orchestration-patterns/</id>
-    <published>2026-06-05T00:00:00.000Z</published>
-    <updated>2026-06-05T00:00:00.000Z</updated><category term="Orchestration" />
-    <summary>The multi-agent orchestration patterns — orchestrator-worker, pipeline, fan-out, debate, swarm, blackboard — when to use each, and when one agent wins.</summary>
-  </entry>
-  <entry>
-    <title>The Multi-Agent Cost Playbook: Five Levers to Cut AI Agent Spend</title>
-    <link href="https://munderdiffl.in/blog/the-multi-agent-cost-playbook/" />
-    <id>https://munderdiffl.in/blog/the-multi-agent-cost-playbook/</id>
-    <published>2026-06-05T00:00:00.000Z</published>
-    <updated>2026-06-05T00:00:00.000Z</updated><category term="Guides" />
-    <summary>Caching, batching, model tiering, context discipline, local-first — the five levers that cut a multi-agent fleet&#39;s bill, and how they compound.</summary>
   </entry>
 </feed>
