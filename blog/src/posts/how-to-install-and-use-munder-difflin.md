@@ -6,6 +6,8 @@ updated: 2026-09-10
 category: guides
 categoryLabel: Guides
 type: Non-technical
+pinned: true
+pinOrder: 2
 primaryKeyword: "how to install munder difflin"
 secondaryKeywords: ["munder difflin download", "munder difflin setup", "what is a coding agent", "munder difflin windows", "free ai coding agent", "antigravity free", "munder difflin beginner guide"]
 tags: ["Guides", "Getting Started", "Tutorial", "Non-Technical", "Automation"]
