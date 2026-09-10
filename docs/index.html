@@ -277,6 +277,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:50;height:64px;background:rgba(2
 .tier .th{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
 .tier .tn{font-family:var(--mono);font-weight:700;font-size:.8rem;letter-spacing:.14em}
 .price{font-weight:700;font-size:2.2rem;letter-spacing:-.03em;line-height:1}
+/* The struck list price sits beside the launch price, smaller and faint, so the number a visitor
+   actually pays is the one that reads as the price. Faint rather than muted on purpose: at this
+   size a struck figure in full contrast competes with the live one. */
+.price s{color:var(--faint);font-weight:600;font-size:1.5rem;text-decoration-thickness:.07em;margin-right:9px}
 .price small{font-family:var(--mono);font-weight:500;font-size:.78rem;letter-spacing:0;color:var(--muted);margin-left:6px}
 .price-alt{font-family:var(--mono);font-size:.78rem;color:var(--faint);margin-top:-4px}
 .tier ul{list-style:none;display:grid;gap:7px;color:var(--muted);font-size:.95rem}
@@ -454,7 +458,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px}
             <li><b>Leave invisible.</b> One click and it is out of every screen share and recording.</li>
           </ul>
           <p class="proline"><b>Stapler is Pro only.</b> It is off until you switch it on in the Pro sidebar, and the free version does not have it.</p>
-          <div class="btn-row"><a class="btn primary sm" href="https://harnessmd.com/pro">Get Pro, $20 a month</a></div>
+          <div class="btn-row"><a class="btn primary sm" href="https://harnessmd.com/pro">Get Pro, $150 a year</a></div>
         </div>
         <div class="customiser pane" id="customiser">
           <div class="fld">
@@ -630,7 +634,17 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px}
 </section>
 
 <!-- 8. PRICING. Source of truth: web/harnessmd/src/server/pricing.ts. The page says nothing about a card for the Pro trial: the /pro dashboard trial (startProTrial) asks for nothing and grants no licence key, the licence trial that gives a working Pro asks for a card, and the founder has not ruled which survives. Teams trial starts at the card, first charge 14 days out (handlers.ts).
-     Sandbox is not shipped and not sold; no price printed. -->
+     Sandbox is not shipped and not sold; no price printed.
+
+     PRO LEADS WITH THE YEAR, 10 Sep 2026. The founder REVERSED his older standing rule (show monthly, starting-from, never lead with an annual
+     total): the annual plan is the default everywhere now, including where people pay, so the year is the headline figure and the month is the
+     alternative underneath. Three Pro figures in pricing.ts back this: individual 2000 = $20 a month, individualAnnual 20000 = $200 list, and
+     individualAnnualLaunch 15000 = $150 while the launch offer runs. The list was deliberately raised off $199 on 9 Sep so a quarter off prints
+     without rounding in our own favour.
+     THE SAVING IS NOT PRINTED AS A PERCENTAGE HERE. Both figures are shown and the strikethrough does the arithmetic, which is exactly true and
+     needs no rounding. That is also what pricing.ts asks for.
+     TEAMS STILL LEADS WITH THE MONTH, on purpose, not by oversight: the reversal was given to me for Pro and the Teams figures were named as out
+     of scope. If the year is meant to lead there too, that is one more edit and it needs saying. -->
 <section id="pricing">
   <div class="wrap center">
     <h2>One download. Three plans.</h2>
@@ -648,8 +662,8 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px}
       </div>
       <div class="tier hot">
         <div class="th"><span class="tn">PRO</span><span class="chip on">14 day trial</span></div>
-        <div class="price">$20<small>/month</small></div>
-        <div class="price-alt">or $199 a year</div>
+        <div class="price"><s>$200</s>$150<small>/year</small></div>
+        <div class="price-alt">or $20 a month</div>
         <ul>
           <li>The PRO workspace: orchestrator, agents, tasks, inbox, automations, memory</li>
           <li>Stapler</li>
@@ -696,7 +710,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px}
       <details><summary>Do teams need a different build?</summary><p>No. Same download, same binary. The Teams plan unlocks the network.</p></details>
       <details><summary>Does my laptop need to stay on?</summary><p>Yes. The clone runs on your machine and stops when the machine does. Sandboxes on machines we host, so a job keeps running after the lid closes, are coming.</p></details>
       <details><summary>Will Teams charge me during the trial?</summary><p>No. Teams takes a card at checkout and the first charge lands on day 14, not before.</p></details>
-      <details><summary>What does it cost?</summary><p>Free is free. Pro is $20 a month or $199 a year. Teams is $39 a seat a month or $399 a seat a year, for 2 to 20 seats. More than 20 seats is a conversation.</p></details>
+      <details><summary>What does it cost?</summary><p>Free is free. Pro is $150 a year while the launch offer runs, down from $200, or $20 a month. Teams is $39 a seat a month or $399 a seat a year, for 2 to 20 seats. More than 20 seats is a conversation.</p></details>
     </div>
   </div>
 </section>
