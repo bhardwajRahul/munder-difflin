@@ -3407,5 +3407,80 @@
         "status": "placeholder"
       }
     ]
+  },
+  "how-to-add-an-mcp-server-to-claude-code": {
+    "title": "How to Add an MCP Server to Claude Code",
+    "category": "guides",
+    "hero": {
+      "file": "assets/media/how-to-add-an-mcp-server-to-claude-code/hero.png",
+      "alt": "Illustration: How to Add an MCP Server to Claude Code",
+      "prompt": "Hero image for a blog post titled \"How to Add an MCP Server to Claude Code\". The post is about: The claude mcp add command, its scope flag, editing .mcp.json by hand, and how Munder Difflin's Capabilities screen grants an MCP server to one agent at a time.",
+      "status": "ready"
+    },
+    "inline": {
+      "note-1": {
+        "file": "assets/media/how-to-add-an-mcp-server-to-claude-code/note-1.png",
+        "alt": "Hand-drawn sketch from “How to Add an MCP Server to Claude Code”",
+        "prompt": "",
+        "status": "ready"
+      },
+      "note-2": {
+        "file": "assets/media/how-to-add-an-mcp-server-to-claude-code/note-2.png",
+        "alt": "Hand-drawn sketch from “How to Add an MCP Server to Claude Code”",
+        "prompt": "",
+        "status": "ready"
+      }
+    },
+    "youtube": []
+  },
+  "codex-cli-vs-claude-code": {
+    "title": "Codex CLI vs Claude Code",
+    "category": "comparisons",
+    "hero": {
+      "file": "assets/media/codex-cli-vs-claude-code/hero.png",
+      "alt": "Illustration: Codex CLI vs Claude Code",
+      "prompt": "Hero image for a blog post titled \"Codex CLI vs Claude Code\". The post is about: Codex CLI and Claude Code compared firsthand: sandbox and approval flags, AGENTS.md vs CLAUDE.md, real pricing, and where each terminal agent wins.",
+      "status": "ready"
+    },
+    "inline": {
+      "note-1": {
+        "file": "assets/media/codex-cli-vs-claude-code/note-1.png",
+        "alt": "Hand-drawn sketch from “Codex CLI vs Claude Code”",
+        "prompt": "",
+        "status": "ready"
+      },
+      "note-2": {
+        "file": "assets/media/codex-cli-vs-claude-code/note-2.png",
+        "alt": "Hand-drawn sketch from “Codex CLI vs Claude Code”",
+        "prompt": "",
+        "status": "ready"
+      }
+    },
+    "youtube": []
+  },
+  "how-much-does-claude-code-cost": {
+    "title": "How Much Does Claude Code Cost?",
+    "category": "concepts",
+    "hero": {
+      "file": "assets/media/how-much-does-claude-code-cost/hero.png",
+      "alt": "Illustration: How Much Does Claude Code Cost?",
+      "prompt": "Hero image for a blog post titled \"How Much Does Claude Code Cost?\". The post is about: What Claude Code actually costs: free plan access, Claude Pro and Max pricing, per token API rates, and what running several agents does to the bill.",
+      "status": "ready"
+    },
+    "inline": {
+      "note-1": {
+        "file": "assets/media/how-much-does-claude-code-cost/note-1.png",
+        "alt": "Hand-drawn sketch from “How Much Does Claude Code Cost?”",
+        "prompt": "",
+        "status": "ready"
+      },
+      "note-2": {
+        "file": "assets/media/how-much-does-claude-code-cost/note-2.png",
+        "alt": "Hand-drawn sketch from “How Much Does Claude Code Cost?”",
+        "prompt": "",
+        "status": "ready"
+      }
+    },
+    "youtube": []
   }
 }
