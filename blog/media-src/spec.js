@@ -134,4 +134,5 @@ const SPEC = {
   "turn-feedback-into-a-backlog-with-agents": { a: "routing", blue: "comments in → cards out", orange: "feedback becomes work", amber: "516 incoming" },
   "we-opened-a-discord": { a: "talk", blue: "come say hi", blue2: "employee of the month", orange: "the office got a lobby" },
   "launching-munder-difflin-v0-4-6": { a: "ship", blue: "v0.4.6 · three languages", orange: "it speaks your language now" },
+  "launching-munder-difflin-v0-5-2": { a: "ship", blue: "0.5.2 · pro workspace · stapler", orange: "one download, three plans" },
 };
