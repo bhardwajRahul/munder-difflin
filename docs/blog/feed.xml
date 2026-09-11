@@ -4,9 +4,25 @@
   <subtitle>Guides, deep dives, and comparisons on running multi-agent Claude Code: orchestration, agent memory, automation, and the tooling landscape.</subtitle>
   <link href="https://munderdiffl.in/blog/feed.xml" rel="self" />
   <link href="https://munderdiffl.in/blog/" />
-  <updated>2026-09-10T00:00:00.000Z</updated>
+  <updated>2026-09-11T00:00:00.000Z</updated>
   <id>https://munderdiffl.in/blog/</id>
   <author><name>Chaitanya Giri</name><uri>https://munderdiffl.in</uri></author>
+  <entry>
+    <title>How to Use Claude Code Plan Mode</title>
+    <link href="https://munderdiffl.in/blog/how-to-use-claude-code-plan-mode/" />
+    <id>https://munderdiffl.in/blog/how-to-use-claude-code-plan-mode/</id>
+    <published>2026-09-11T00:00:00.000Z</published>
+    <updated>2026-09-11T00:00:00.000Z</updated><category term="Guides" />
+    <summary>How Claude Code&#39;s plan mode works: turning it on, what it blocks, real headless --permission-mode plan output, and how to leave it.</summary>
+  </entry>
+  <entry>
+    <title>What Is an MCP Server?</title>
+    <link href="https://munderdiffl.in/blog/what-is-an-mcp-server/" />
+    <id>https://munderdiffl.in/blog/what-is-an-mcp-server/</id>
+    <published>2026-09-11T00:00:00.000Z</published>
+    <updated>2026-09-11T00:00:00.000Z</updated><category term="Concepts" />
+    <summary>An MCP server gives an AI agent tools, data and prompts over one open protocol. What it is, the host, client and server roles, and where Claude Code plugs in.</summary>
+  </entry>
   <entry>
     <title>Codex CLI vs Claude Code</title>
     <link href="https://munderdiffl.in/blog/codex-cli-vs-claude-code/" />
@@ -470,21 +486,5 @@
     <published>2026-06-05T00:00:00.000Z</published>
     <updated>2026-06-05T00:00:00.000Z</updated><category term="Internals" />
     <summary>How and why to compress an agent&#39;s long-term memory: the toolbox, the lossy trap, and keeping a lossless original beside a compact copy.</summary>
-  </entry>
-  <entry>
-    <title>Generative Engine Optimization: The Techniques the Research Backs</title>
-    <link href="https://munderdiffl.in/blog/generative-engine-optimization-techniques/" />
-    <id>https://munderdiffl.in/blog/generative-engine-optimization-techniques/</id>
-    <published>2026-06-05T00:00:00.000Z</published>
-    <updated>2026-06-05T00:00:00.000Z</updated><category term="Concepts" />
-    <summary>What the first peer-reviewed GEO study found works to get content cited by AI — statistics, source citations, quotes — and why keyword stuffing backfires.</summary>
-  </entry>
-  <entry>
-    <title>How to Install and Use Munder Difflin: A Beginner&#39;s Guide</title>
-    <link href="https://munderdiffl.in/blog/how-to-install-and-use-munder-difflin/" />
-    <id>https://munderdiffl.in/blog/how-to-install-and-use-munder-difflin/</id>
-    <published>2026-06-05T00:00:00.000Z</published>
-    <updated>2026-09-10T00:00:00.000Z</updated><category term="Guides" />
-    <summary>A plain language guide to Munder Difflin 0.5.2. What a coding agent is, which AI engine to pick based on what you already pay for, the one terminal command you&#39;ll ever run, and how to install and set it up on macOS, Windows or Linux.</summary>
   </entry>
 </feed>
