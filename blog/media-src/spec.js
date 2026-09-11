@@ -28,6 +28,8 @@ const SPEC = {
   "how-to-add-an-mcp-server-to-claude-code": { a: "wire", blue: "claude mcp add", orange: "one command, three scopes" },
   "codex-cli-vs-claude-code": { a: "versus", blue: "codex cli", blue2: "claude code", orange: "same job, two dials" },
   "how-much-does-claude-code-cost": { a: "ledger", blue: "pro · max · api", orange: "what the bill really says" },
+  "how-to-use-claude-code-plan-mode": { a: "guard", amber: "risky edits", blue: "permission mode: plan", orange: "read first, edit after yes" },
+  "what-is-an-mcp-server": { a: "routing", amber: "requests", blue: "mcp", orange: "one plug, many tools" },
   "compressing-agent-memory": { a: "memory", blue: "compress, keep the original", orange: "smaller memory, no loss" },
   "conductor-claude-code-alternative": { a: "versus", blue: "conductor", blue2: "munder difflin", orange: "a conductor alternative" },
   "context-engineering-for-ai-agents": { a: "ledger", blue: "the context window is a budget", orange: "spend it deliberately" },

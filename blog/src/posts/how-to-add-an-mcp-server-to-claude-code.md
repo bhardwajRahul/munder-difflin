@@ -29,7 +29,7 @@ That one command handles the common case. What's worth understanding is the scop
 
 ## What is an MCP server?
 
-An MCP server is a program that gives an agent tools or data it doesn't have built in: a way to search issues, query a database, or drive a browser. The Model Context Protocol is the open standard those servers speak, described on its own site as "a standardized way to connect AI applications to external systems" (checked 10 Sep 2026, [modelcontextprotocol.io](https://modelcontextprotocol.io)). Anthropic open sourced MCP on 25 November 2024, with initial SDKs and a handful of reference servers (checked 10 Sep 2026, [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)). Claude Code is one client among several now; any compliant server works with it.
+An MCP server is a program that gives an agent tools or data it doesn't have built in: a way to search issues, query a database, or drive a browser. The Model Context Protocol is the open standard those servers speak, described on its own site as "a standardized way to connect AI applications to external systems" (checked 10 Sep 2026, [modelcontextprotocol.io](https://modelcontextprotocol.io)). Anthropic open sourced MCP on 25 November 2024, with initial SDKs and a handful of reference servers (checked 10 Sep 2026, [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)). Claude Code is one client among several now; any compliant server works with it. For the longer answer, with the host, client and server roles and how discovery works, see [What Is an MCP Server?](/blog/what-is-an-mcp-server/).
 
 ## How do you add an MCP server to Claude Code?
 
