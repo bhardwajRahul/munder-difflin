@@ -1,6 +1,6 @@
 ---
 title: "How to Use Claude Code Plan Mode"
-description: "How Claude Code's plan mode works: turning it on, what it blocks, real headless --permission-mode plan output, and how to leave it."
+description: "How Claude Code's plan mode works: turning it on, what it blocks, what a real headless plan mode run prints, and how to leave it."
 date: 2026-09-11
 category: guides
 categoryLabel: Guides
